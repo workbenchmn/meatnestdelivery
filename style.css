@@ -429,7 +429,7 @@ textarea.form-input {
 /* Responsive Styles */
 @font-face {
     font-family: 'MontserratBold';
-    src: url('Assets/Montserrat-VariableFont_wght.ttf') format('truetype'); /* adjust path if needed */
+    src: url('Asssets/Montserrat-VariableFont_wght.ttf') format('truetype'); /* adjust path if needed */
     font-weight: 700;
     font-style: normal;
 }
@@ -498,3 +498,4 @@ textarea.form-input {
         grid-template-columns: 1fr;
     }
 }
+
