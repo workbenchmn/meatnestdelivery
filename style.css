@@ -449,10 +449,11 @@ textarea.form-input {
 }
 
 @media (max-width: 768px) {
+    /* Fix mobile menu */
     .nav-menu {
         display: none;
-        position: absolute;
-        top: 80px;
+        position: fixed;         /* instead of absolute */
+        top: 70px;               /* just below header */
         left: 0;
         width: 100%;
         background-color: white;
@@ -460,6 +461,7 @@ textarea.form-input {
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         gap: 15px;
+        z-index: 999;            /* keep above content */
     }
     
     .nav-menu.active {
@@ -470,19 +472,31 @@ textarea.form-input {
         display: block;
     }
     
+    .hero-image img {
+        max-width: 80%;          /* reduce large image on mobile */
+    }
+    
     .category-content.active {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;   /* one item per row */
     }
 }
 
 @media (max-width: 576px) {
     .hero-title {
-        font-size: 30px;
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
     }
     
     .btn-primary, .btn-secondary {
-        padding: 10px 20px;
+        padding: 10px 18px;
         font-size: 14px;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
     }
     
     .category-content.active {
