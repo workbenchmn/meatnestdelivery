@@ -13,7 +13,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="https://placeholder-image-service.onrender.com/image/50x50?prompt=A+simple+meat+company+logo+with+a+chicken+silhouette+and+nest+design&id=meatnest-logo" alt="MeatNest Logo">
+                <img src="Assets/MN LOGO.png" alt="MeatNest Logo">
                 <h1>MEATNEST</h1>
             </div>
             <nav class="nav-menu" id="navMenu">
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Delivery+person+riding+orange+scooter+with+meat+package+wearing+uniform+against+yellow+and+grey+background&id=delivery-hero" alt="Delivery person on orange scooter with meat package">
+                <img src="Assets/deliverylogo.png" alt="Delivery person on orange scooter with meat package">
             </div>
         </div>
         <div class="container">
@@ -167,27 +167,30 @@
     </div>
 
     <!-- Contact Modal -->
-    <div class="modal-overlay" id="contactModal">
-        <div class="modal">
-            <button class="modal-close" id="closeContactModal">×</button>
-            <h2 class="modal-title">Contact Us</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <input type="text" class="form-input" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-input" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-input" placeholder="Mobile Number" required>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-input" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
-            </form>
-        </div>
+<div class="modal-overlay" id="contactModal">
+    <div class="modal">
+        <button class="modal-close" id="closeContactModal">×</button>
+        <h2 class="modal-title">Contact Us</h2>
+        <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSct2YbEKtrfwOX2JwD7OlZKbG4SgbEqc-8Uf5Z0olZCLiOQSA/formResponse" method="POST" target="hidden_iframe">
+            <div class="form-group">
+                <input type="text" name="entry.150512582" class="form-input" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="entry.179671267" class="form-input" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="entry.1076443398" class="form-input" placeholder="Mobile Number" required>
+            </div>
+            <div class="form-group">
+                <textarea name="entry.1918088784" class="form-input" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+        </form>
     </div>
+</div>
+
+<!-- Hidden iframe to prevent redirect -->
+<iframe name="hidden_iframe" style="display:none;"></iframe>
 
     <script src="script.js"></script>
 </body>
