@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeatNest - Fresh Meat Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://placeholder-image-service.onrender.com/image/50x50?prompt=A+simple+meat+company+logo+with+a+chicken+silhouette+and+nest+design&id=meatnest-logo" alt="MeatNest Logo">
+                <h1>MEATNEST</h1>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <button class="nav-item active" data-target="home">Home</button>
+                <button class="nav-item" data-target="shop">Shop</button>
+                <button class="nav-item" data-target="about">About Us</button>
+                <button class="nav-item" data-target="contact">Contact</button>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="delivery-info">
+                    <i class="fas fa-truck"></i>
+                    Free Delivery Within 24 Hours
+                </div>
+                <h1 class="hero-title">Fresh Meat Delivered to Your Doorstep</h1>
+                <p class="hero-subtitle">At MeatNest, we bring the farm-fresh goodness of chicken, mutton, and fish right to your kitchen. Quality you can trust, convenience you deserve.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Order Now</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Delivery+person+riding+orange+scooter+with+meat+package+wearing+uniform+against+yellow+and+grey+background&id=delivery-hero" alt="Delivery person on orange scooter with meat package">
+            </div>
+        </div>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Our Categories</h2>
+            <div class="category-container">
+                <!-- Chicken Category -->
+                <div class="category">
+                    <div class="category-header" data-category="chicken">
+                        <h3 class="category-title">Chicken</h3>
+                        <span class="category-icon">▼</span>
+                    </div>
+                    <div class="category-content" id="chicken-content">
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Fresh+chicken+with+skin+on+displayed+on+butcher+paper&id=chicken-withskin" alt="Fresh chicken with skin">
+                            <p class="item-name">With Skin</p>
+                        </div>
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Skinless+chicken+pieces+neatly+arranged&id=chicken-skinout" alt="Skinless chicken pieces">
+                            <p class="item-name">Skin Out</p>
+                        </div>
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Boneless+chicken+breast+fillet+on+cutting+board&id=chicken-boneless" alt="Boneless chicken breast">
+                            <p class="item-name">Boneless</p>
+                        </div>
+
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Fresh+chicken+with+skin+on+displayed+on+butcher+paper&id=chicken-withskin" alt="Fresh chicken with skin">
+                            <p class="item-name">With Skin</p>
+                        </div>
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Skinless+chicken+pieces+neatly+arranged&id=chicken-skinout" alt="Skinless chicken pieces">
+                            <p class="item-name">Skin Out</p>
+                        </div>
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Boneless+chicken+breast+fillet+on+cutting+board&id=chicken-boneless" alt="Boneless chicken breast">
+                            <p class="item-name">Boneless</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Mutton Category -->
+                <div class="category">
+                    <div class="category-header" data-category="mutton">
+                        <h3 class="category-title">Mutton</h3>
+                        <span class="category-icon">▼</span>
+                    </div>
+                    <div class="category-content" id="mutton-content">
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Premium+cut+of+male+goat+meat+displayed+in+butcher+shop&id=mutton-male" alt="Premium male mutton cuts">
+                            <p class="item-name">Male</p>
+                        </div>
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Selection+of+female+goat+meat+cuts+on+display&id=mutton-female" alt="Female mutton selection">
+                            <p class="item-name">Female</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fish Category -->
+                <div class="category">
+                    <div class="category-header" data-category="fish">
+                        <h3 class="category-title">Fish</h3>
+                        <span class="category-icon">▼</span>
+                    </div>
+                    <div class="category-content" id="fish-content">
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Fresh+salmon+fillet+on+ice+display&id=fish-salmon" alt="Fresh salmon fillet">
+                            <p class="item-name">Salmon</p>
+                        </div>
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Whole+pomfret+fish+on+display&id=fish-pomfret" alt="Whole pomfret fish">
+                            <p class="item-name">Pomfret</p>
+                        </div>
+                        <div class="category-item">
+                            <img src="https://placeholder-image-service.onrender.com/image/200x150?prompt=Fresh+catfish+displayed+on+crushed+ice&id=fish-catfish" alt="Fresh catfish on ice">
+                            <p class="item-name">Catfish</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms and Conditions</a>
+            </div>
+            <p class="copyright">MeatNest by <a href="#" class="footer-link">WorkbenchTraders</a>, all rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- About Us Modal -->
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal">
+            <button class="modal-close" id="closeAboutModal">×</button>
+            <h2 class="modal-title">About Us</h2>
+            <p class="modal-text">
+                MeatNest is your trusted partner for fresh, high-quality meat delivery. 
+                We source the best chicken, mutton, and fish directly from verified farms to ensure premium quality and hygiene. 
+                Our mission is to make nutritious meat accessible to every home with fast, reliable delivery.
+            </p>
+            <p class="modal-text">
+                With years of experience in the industry, we understand what it takes to deliver freshness to your table. 
+                Our team carefully selects each product to meet our stringent quality standards.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal">
+            <button class="modal-close" id="closeContactModal">×</button>
+            <h2 class="modal-title">Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-input" placeholder="Mobile Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-input" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
