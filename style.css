@@ -47,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .logo {
@@ -61,9 +61,11 @@ header {
 }
 
 .logo h1 {
+    font-family: 'MontserratBold', sans-serif; /* Use your custom font */
     font-size: 24px;
     color: #E95420;
     font-weight: 700;
+    letter-spacing: 0px; /* optional spacing */
 }
 
 .nav-menu {
@@ -176,11 +178,11 @@ header {
     align-items: center;
 }
 
-.hero-image img {
+/*.hero-image img {
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     max-width: 100%;
-}
+}           */
 
 .social-icons {
     display: flex;
@@ -302,12 +304,12 @@ header {
 footer {
     background-color: #333;
     color: white;
-    padding: 40px 0;
+    padding: 5px 0;
     text-align: center;
 }
 
 .footer-links {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer-link {
@@ -425,6 +427,13 @@ textarea.form-input {
 }
 
 /* Responsive Styles */
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('Assets/Montserrat-VariableFont_wght.ttf') format('truetype'); /* adjust path if needed */
+    font-weight: 700;
+    font-style: normal;
+}
+
 @media (max-width: 992px) {
     .hero-content {
         flex-direction: column;
@@ -449,11 +458,10 @@ textarea.form-input {
 }
 
 @media (max-width: 768px) {
-    /* Fix mobile menu */
     .nav-menu {
         display: none;
-        position: fixed;         /* instead of absolute */
-        top: 70px;               /* just below header */
+        position: absolute;
+        top: 80px;
         left: 0;
         width: 100%;
         background-color: white;
@@ -461,7 +469,6 @@ textarea.form-input {
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         gap: 15px;
-        z-index: 999;            /* keep above content */
     }
     
     .nav-menu.active {
@@ -472,31 +479,19 @@ textarea.form-input {
         display: block;
     }
     
-    .hero-image img {
-        max-width: 80%;          /* reduce large image on mobile */
-    }
-    
     .category-content.active {
-        grid-template-columns: 1fr;   /* one item per row */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 576px) {
     .hero-title {
-        font-size: 28px;
-    }
-    
-    .hero-subtitle {
-        font-size: 16px;
+        font-size: 30px;
     }
     
     .btn-primary, .btn-secondary {
-        padding: 10px 18px;
+        padding: 10px 20px;
         font-size: 14px;
-    }
-    
-    .hero-image img {
-        max-width: 100%;
     }
     
     .category-content.active {
