@@ -88,19 +88,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Form submission
-    contactForm.addEventListener('submit', function(e) {
+contactForm.addEventListener('submit', function(e) {
+    // 1. DO NOT CALL e.preventDefault(); 
+    // This allows the form to submit to the Google Form URL (action) 
+    // and target the hidden_iframe.
+    
+    // 2. Visually update the button to indicate the submission is IN PROGRESS.
+    submitBtn.classList.add('sent');
+    submitBtn.textContent = 'Sending...';
+
+    // 3. Wait 2 seconds (time for the submission to process in the background)
+    //    and perform the cleanup/success actions.
+    setTimeout(function() {
+        // Reset the form
+        contactForm.reset(); 
+
+        // Update the button text (assuming success) and remove the 'sent' class
+        submitBtn.classList.remove('sent');
+        submitBtn.textContent = 'Send Message';
         
-        // Change button to show success
-        submitBtn.classList.add('sent');
-        submitBtn.textContent = 'Sent!';
-        
-        // Reset form after 2 seconds
-        setTimeout(function() {
-            contactForm.reset();
-            submitBtn.classList.remove('sent');
-            submitBtn.textContent = 'Send Message';
-            contactModal.classList.remove('active');
-        }, 2000);
-    });
+        // Close the modal
+        contactModal.classList.remove('active'); 
+    }, 2000); // 2000ms (2 seconds) delay
 });
+});
+
 
