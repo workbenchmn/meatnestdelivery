@@ -89,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Form submission
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
         
         // Change button to show success
         submitBtn.classList.add('sent');
@@ -104,3 +103,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     });
 });
+
