@@ -60,10 +60,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Modal functionality
     const aboutModal = document.getElementById('aboutModal');
     const contactModal = document.getElementById('contactModal');
+
+    const learnMoreModal = document.getElementById('learnMoreModal');
+    const openLearnMoreModal = document.getElementById('openLearnMoreModal');
+    const closeLearnMoreModal = document.getElementById('closeLearnMoreModal');
+
     const closeAboutModal = document.getElementById('closeAboutModal');
     const closeContactModal = document.getElementById('closeContactModal');
     const contactForm = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
+
+    // Open Learn More modal
+    openLearnMoreModal.addEventListener('click', function() {
+        learnMoreModal.classList.add('active');
+    });
+
+    // Close Learn More modal
+    closeLearnMoreModal.addEventListener('click', function() {
+        learnMoreModal.classList.remove('active');
+    });
+
+    // Click outside Learn More modal to close
+    learnMoreModal.addEventListener('click', function(e) {
+    if (e.target === learnMoreModal) {
+        learnMoreModal.classList.remove('active');
+    }
+    });
     
     // Close modals
     closeAboutModal.addEventListener('click', function() {
@@ -112,5 +134,4 @@ contactForm.addEventListener('submit', function(e) {
     }, 2000); // 2000ms (2 seconds) delay
 });
 });
-
 
