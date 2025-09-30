@@ -147,6 +147,7 @@ header {
     font-weight: 600;
     font-size: 16px;
     transition: all 0.3s;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -164,6 +165,7 @@ header {
     font-size: 16px;
     border: 2px solid #E95420;
     transition: all 0.3s;
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -203,6 +205,7 @@ header {
     font-size: 20px;
     transition: all 0.3s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-decoration: none;
 }
 
 .social-icon:hover {
@@ -498,4 +501,3 @@ textarea.form-input {
         grid-template-columns: 1fr;
     }
 }
-
