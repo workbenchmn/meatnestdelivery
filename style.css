@@ -98,7 +98,7 @@ header {
 .hero {
     background: linear-gradient(135deg, #FFE5D0 0%, #FFD1AA 100%);
     margin-top: 80px;
-    padding: 60px 0;
+    padding: 30px 0 60px 0;
 }
 
 .hero-content {
@@ -503,4 +503,5 @@ textarea.form-input {
         grid-template-columns: 1fr;
     }
 }
+
 
